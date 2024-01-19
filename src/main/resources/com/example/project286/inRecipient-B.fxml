@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyComboBox?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InRecipientBHandler">
+    <children>
+        <MFXLegacyComboBox fx:id="using" editable="true" layoutX="331.0" layoutY="14.0" lineColor="WHITE" lineStrokeWidth="1.0" prefHeight="30.0" prefWidth="200.0" unfocusedLineColor="WHITE" visibleRowCount="3" />
+        <Label layoutX="200.0" layoutY="20.0" prefHeight="30.0" prefWidth="122.0" text="Search using" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtSearch" focusColor="#d74ec2" layoutX="608.0" layoutY="14.0" prefHeight="30.0" prefWidth="250.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+        <MFXLegacyTableView fx:id="recipients_table" layoutX="15.0" layoutY="84.0" prefHeight="428.0" prefWidth="1050.0" stylesheets="@../../../tableview5.css">
+            <columns>
+                <TableColumn fx:id="clmId" minWidth="30.0" prefWidth="84.0" text="ID" />
+                <TableColumn fx:id="clmName" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="clmOrgan" minWidth="0.0" prefWidth="110.0" text="Needed organ" />
+                <TableColumn fx:id="clmPriority" minWidth="0.0" prefWidth="86.0" text="Priority" />
+                <TableColumn fx:id="clmRegDate" minWidth="0.0" prefWidth="115.0" text="Regist. date" />
+                <TableColumn fx:id="clmPhone" minWidth="0.0" prefWidth="93.0" text="Phone" />
+                <TableColumn fx:id="clmEmail" minWidth="0.0" prefWidth="145.0" text="Email" />
+                <TableColumn fx:id="clmAddress" minWidth="0.0" prefWidth="110.0" text="Address" />
+            <TableColumn fx:id="clmRecieved" minWidth="0.0" prefWidth="110.0" text="Recieved" />
+            </columns>
+        </MFXLegacyTableView>
+      <JFXButton fx:id="search" layoutX="892.0" layoutY="21.0" onAction="#commitSearch" prefHeight="30.0" prefWidth="121.0" ripplerFill="#d74ec2" stylesheets="@../../../tableButtons.css" text="search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="delete" layoutX="410.0" layoutY="523.0" onAction="#commitDelete" prefHeight="30.0" prefWidth="121.0" stylesheets="@../../../tableButtons.css" text="delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

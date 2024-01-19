@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.TestPaneHandler">
+    <children>
+        <MFXLegacyComboBox fx:id="using" editable="true" layoutX="250.0" layoutY="77.0" lineColor="WHITE" lineStrokeWidth="1.0" prefHeight="30.0" prefWidth="209.0" style="-fx-font-size: 15;" unfocusedLineColor="WHITE" visibleRowCount="3" />
+        <Label layoutX="119.0" layoutY="83.0" prefHeight="30.0" prefWidth="122.0" text="Search using" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtSearch" layoutX="491.0" layoutY="77.0" prefHeight="30.0" prefWidth="268.0" style="-fx-font-size: 15; -fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+        <Label alignment="CENTER" layoutX="436.0" layoutY="14.0" prefHeight="54.0" prefWidth="209.0" style="-fx-font-family: algerian;" stylesheets="@../../../label..css" text="testS" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tests_table" editable="true" layoutX="16.0" layoutY="132.0" prefHeight="482.0" prefWidth="1050.0">
+            <columns>
+                <TableColumn fx:id="clmNumber" minWidth="30.0" prefWidth="146.0" text="Test number" />
+                <TableColumn fx:id="clmName" prefWidth="297.0" text="Test name" />
+                <TableColumn fx:id="clmResult" minWidth="0.0" prefWidth="153.0" text="Result" />
+                <TableColumn fx:id="clmRecipient" minWidth="0.0" prefWidth="251.0" text="Recipient" />
+                <TableColumn fx:id="clmDonor" minWidth="0.0" prefWidth="202.0" text="Donor" />
+            </columns>
+         <stylesheets>
+            <URL value="@../../../tableview3.css" />
+            <URL value="@../../../tableview6.css" />
+         </stylesheets>
+        </TableView>
+        <MFXButton fx:id="search" buttonType="RAISED" layoutX="780.0" layoutY="83.0" onAction="#commitSearch" prefHeight="30.0" prefWidth="87.0" rippleColor="#17909e" style="-fx-background-color: linear-gradient(#4ca4bf 0%, #135366 100%);" text="search" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </MFXButton>
+      <MFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="888.0" layoutY="83.0" onAction="#deleteTest" prefHeight="30.0" prefWidth="87.0" rippleColor="#17909e" style="-fx-background-color: linear-gradient(#4ca4bf 0%, #135366 100%);" text="delete" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXButton>
+    </children>
+    <padding>
+        <Insets left="20.0" />
+    </padding>
+</AnchorPane>

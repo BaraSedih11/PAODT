@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ffe53b37-e709-44ea-a88d-4dcaeb4de7c1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="IkhPU1BJVEFMIiAsMTUsMTUsNjAzM2I0MDktOWQwYi00NzJjLWFmYjEtZmQ0ZTI0YjUwNDFlOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BaraReport"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT "HOSPITAL_NAME",
+	"CITY",
+	"STREET",
+	"PHONE_NUMBER",
+	"VALID"
+FROM "HOSPITAL"]]>
+	</queryString>
+	<field name="HOSPITAL_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HOSPITAL_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="HOSPITAL_NAME"/>
+	</field>
+	<field name="CITY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CITY"/>
+		<property name="com.jaspersoft.studio.field.label" value="CITY"/>
+	</field>
+	<field name="STREET" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="STREET"/>
+		<property name="com.jaspersoft.studio.field.label" value="STREET"/>
+	</field>
+	<field name="PHONE_NUMBER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PHONE_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.label" value="PHONE_NUMBER"/>
+	</field>
+	<field name="VALID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="VALID"/>
+		<property name="com.jaspersoft.studio.field.label" value="VALID"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="9287e3c6-5a40-4969-9c2c-a911790978d4"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="60" forecolor="#FFFFFF" uuid="7f15322f-4c75-4e34-b537-edbb6646cab5"/>
+					<textElement>
+						<font fontName="Algerian" size="38" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Hospitals]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="380" y="46" width="204" height="20" forecolor="#FFFFFF" uuid="422585c0-e2cd-45e0-a2f6-2440c1235d27"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[All information about hospitals]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="ac151d7a-c43d-4af2-9501-bcbbae2d5b3c"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="120" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e524f76d-208e-4568-a1df-725557ec91a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e26fcdf6-727f-4ea3-b17b-3457493b000f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HOSPITAL_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="120" y="0" width="102" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d13a4fd2-613d-40fd-9a59-e5a74d17678a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84899d19-bf6e-4760-9135-9f8bf7729bf6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="222" y="0" width="98" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="1ef159c8-ed28-4ffe-bc68-967e9c5a1120">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46c13670-7672-4bf0-90c2-464f03ef79c3"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STREET]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="320" y="0" width="130" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e25dfa95-56ee-4392-af8c-6e55486dbf47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="873208df-ee28-4e20-9212-0aebb093ceb0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHONE_NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="450" y="0" width="105" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="1ff5bc78-01d8-4e84-acdf-be5bf7b8790a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5da3ccb-c21f-4e85-a36c-4facab9ee8b7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VALID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="0b4ff44e-b210-47b6-ad03-ed5abf2ae2bd"/>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="120" height="20" uuid="db12436f-c3ab-4791-8934-ba623bfed51d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e26fcdf6-727f-4ea3-b17b-3457493b000f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HOSPITAL_NAME}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="120" y="0" width="102" height="20" uuid="c9a515eb-c2fb-481c-9abc-b8206e679031">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84899d19-bf6e-4760-9135-9f8bf7729bf6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CITY}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="222" y="0" width="98" height="20" uuid="d056e2ce-a4b5-4a98-9aa6-a1557230ccad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46c13670-7672-4bf0-90c2-464f03ef79c3"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STREET}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="320" y="0" width="130" height="20" uuid="c15a8f74-1e59-4607-8cf9-d84321bf9fe7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="873208df-ee28-4e20-9212-0aebb093ceb0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PHONE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="450" y="0" width="105" height="20" uuid="d1fdd1e9-43a4-4ae2-9770-c1e96257910b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5da3ccb-c21f-4e85-a36c-4facab9ee8b7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VALID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="22b32b01-6afd-4a7e-884a-d2a6b3231d34"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="2849f280-0716-48f7-947a-d771dc049bc8"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="b43a6b3e-f1a3-492a-967b-d854acfad9cf"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

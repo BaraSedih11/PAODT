@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lungsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="620.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InScheduleBLungsHandler">
+    <children>
+        <Label alignment="BOTTOM_LEFT" layoutX="30.0" layoutY="93.0" prefHeight="32.0" prefWidth="157.0" text="Tissue match test:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXRadioButton fx:id="positiveECG" layoutX="259.0" layoutY="161.0" text="Positive" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <toggleGroup>
+                <ToggleGroup fx:id="d1" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="negativeECG" layoutX="355.0" layoutY="161.0" text="Negative" textFill="WHITE" toggleGroup="$d1">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <selectedColor>
+                <Color red="1.0" />
+            </selectedColor>
+        </JFXRadioButton>
+        <JFXCheckBox fx:id="hardDiseases" layoutX="41.0" layoutY="514.0" text="Clear of Cancer(all types), immune diseases and mental issues " textFill="WHITE" unCheckedColor="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXCheckBox>
+        <JFXTextField fx:id="txtTissue" alignment="CENTER" focusColor="#19a2ae" layoutX="197.0" layoutY="89.0" prefHeight="25.0" prefWidth="62.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="262.0" layoutY="93.0" prefHeight="32.0" prefWidth="23.0" text="\%" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="30.0" layoutY="155.0" prefHeight="32.0" prefWidth="223.0" text="Electrocardiogram (ECG):" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="214.0" prefHeight="32.0" prefWidth="157.0" text="Echocardiogram:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXRadioButton fx:id="positiveEcho" layoutX="196.0" layoutY="220.0" text="Positive" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <toggleGroup>
+                <ToggleGroup fx:id="d2" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="negativeEcho" layoutX="292.0" layoutY="220.0" text="Negative" textFill="WHITE" toggleGroup="$d2">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <selectedColor>
+                <Color red="1.0" />
+            </selectedColor>
+        </JFXRadioButton>
+        <Label layoutX="32.0" layoutY="277.0" prefHeight="32.0" prefWidth="137.0" text="Antibody tests:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXRadioButton fx:id="positiveAntibody" layoutX="166.0" layoutY="283.0" prefHeight="20.0" prefWidth="90.0" text="Positive" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <toggleGroup>
+                <ToggleGroup fx:id="d3" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="negativeAntibody" layoutX="262.0" layoutY="283.0" text="Negative" textFill="WHITE" toggleGroup="$d3">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <unSelectedColor>
+                <Color red="1.0" green="1.0" blue="1.0" />
+            </unSelectedColor>
+            <selectedColor>
+                <Color red="1.0" />
+            </selectedColor>
+        </JFXRadioButton>
+        <Label layoutX="33.0" layoutY="335.0" prefHeight="32.0" prefWidth="304.0" text="Correspondence in chest cavity size:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtCavity" alignment="CENTER" focusColor="#19a2ae" layoutX="353.0" layoutY="333.0" prefHeight="25.0" prefWidth="62.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="418.0" layoutY="337.0" prefHeight="32.0" prefWidth="23.0" text="\%" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="392.0" layoutY="396.0" prefHeight="32.0" prefWidth="165.0" text="(90% at least required)" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+      <Label layoutX="32.0" layoutY="396.0" prefHeight="32.0" prefWidth="257.0" text="Correspondence in lungs size:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSize" alignment="CENTER" focusColor="#19a2ae" layoutX="300.0" layoutY="394.0" prefHeight="25.0" prefWidth="62.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="365.0" layoutY="398.0" prefHeight="32.0" prefWidth="23.0" text="\%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="recipientValid" layoutX="41.0" layoutY="469.0" text="The recipient is fit to do such a surgical procedure" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <Label alignment="CENTER" graphicTextGap="0.0" layoutX="58.0" layoutY="14.0" prefHeight="49.0" prefWidth="492.0" text="CORRESPONDENCE TESTS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="save" buttonType="RAISED" layoutX="34.0" layoutY="572.0" onAction="#savePressed" prefHeight="32.0" prefWidth="541.0" rippleColor="#19ae23" style="-fx-background-color: rgb(0,0,0,0.6);" text="save" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXButton>
+    </children>
+</AnchorPane>

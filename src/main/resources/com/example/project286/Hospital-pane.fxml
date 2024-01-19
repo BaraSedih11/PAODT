@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="hosPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" styleClass="rad" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.HospitalPaneHandler">
+   <children>
+      <ImageView disable="true" fitHeight="627.0" fitWidth="1081.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../IMG_5326.JPG" />
+         </image>
+         <effect>
+            <GaussianBlur radius="14.45" />
+         </effect>
+      </ImageView>
+      <TableView fx:id="hospitals_table" layoutX="35.0" layoutY="159.0" opacity="0.9" prefHeight="408.0" prefWidth="645.0" stylesheets="@../../../tableview2.css">
+        <columns>
+          <TableColumn fx:id="hName" prefWidth="291.0" style="-fx-text-color: black;" styleClass="-fx-text-color" text="Hospital Name" />
+          <TableColumn fx:id="hAddress" prefWidth="195.0" text="Hospital Address" />
+            <TableColumn fx:id="hPhone" prefWidth="155.99993896484375" text="Hospital Phone" />
+        </columns>
+      </TableView>
+      <Label layoutX="427.0" layoutY="20.0" style="-fx-font-family: Algerian;" stylesheets="@../../../label..css" text="Hospitals" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <MFXLegacyComboBox fx:id="using" editable="true" layoutX="307.0" layoutY="97.0" lineColor="WHITE" lineStrokeWidth="1.0" prefHeight="30.0" prefWidth="209.0" style="-fx-font-size: 15;" unfocusedLineColor="WHITE" visibleRowCount="3" />
+      <Label layoutX="165.0" layoutY="103.0" prefHeight="30.0" prefWidth="128.0" text="Search using:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSearch" focusColor="#2b8cb5" layoutX="553.0" layoutY="97.0" prefHeight="30.0" prefWidth="268.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="search" layoutX="858.0" layoutY="106.0" onAction="#commitSearch" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: linear-gradient(#4ca4bf 0%,  #147e8a 100%);" text="Search" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="doctors_table" layoutX="694.0" layoutY="159.0" opacity="0.9" prefHeight="408.0" prefWidth="371.0" stylesheets="@../../../tableview2.css">
+        <columns>
+          <TableColumn fx:id="dName" prefWidth="171.0" text="Doctor's name" />
+            <TableColumn fx:id="ClmHosp" maxWidth="231.00006103515625" prefWidth="200.00006103515625" style="-fx-text-color: black;" styleClass="-fx-text-color" text="Hospital Name" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="doctor" layoutX="694.0" layoutY="578.0" onAction="#toDoctor" prefHeight="35.0" prefWidth="209.0" ripplerFill="#18599a" style="-fx-background-color: linear-gradient(#4ca4bf 0%,  #147e8a 100%);" text="Add Doctor" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="hospital" layoutX="35.0" layoutY="578.0" onAction="#toHospital" prefHeight="35.0" prefWidth="414.0" ripplerFill="#18599a" style="-fx-background-color: linear-gradient(#4ca4bf 0%,  #147e8a 100%);" text="Add Hospital" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteDoc" layoutX="910.0" layoutY="576.0" onAction="#deleteDoc" prefHeight="35.0" prefWidth="151.0" style="-fx-background-color: linear-gradient(#4ca4bf 0%,  #147e8a 100%);" text="Delete Doctor" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteHos" layoutX="456.0" layoutY="578.0" onAction="#deleteHos" prefHeight="35.0" prefWidth="224.0" style="-fx-background-color: linear-gradient(#4ca4bf 0%,  #147e8a 100%);" text="Delete Hospital" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

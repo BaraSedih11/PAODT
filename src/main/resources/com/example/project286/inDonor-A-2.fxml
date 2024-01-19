@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneA2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="900.0" style="-fx-background-color: #147e8a; -fx-background-radius: 45; -fx-border-radius: 40; -fx-border-width: 2 2 2 2; -fx-border-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InDonorA2Handler">
+    <children>
+      <Label layoutX="21.0" layoutY="25.0" prefHeight="31.0" prefWidth="199.0" text="Health information:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="789.0" layoutX="111.0" layoutY="66.0" startX="-111.0" stroke="WHITE" />
+      <JFXCheckBox fx:id="mentalIssues" checkedColor="#d74ec2" layoutX="31.0" layoutY="260.0" prefHeight="30.0" prefWidth="342.0" text="The donor has no mental issues" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="hardDiseases" checkedColor="#d74ec2" layoutX="31.0" layoutY="305.0" prefHeight="30.0" prefWidth="770.0" text="The donor is clear of (AIDS(HIV), Syphilis, HBV, HCV, Cancer(any type) and Imunne diseases)" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <HBox layoutX="31.0" layoutY="136.0" prefHeight="39.0" prefWidth="731.0" spacing="20.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="98.0" text="Diseases:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="liverDiseases" checkedColor="#d74ec2" prefHeight="39.0" prefWidth="138.0" text="Liver diseases" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="HBV, HCV, Cirrhosis ..." />
+               </tooltip>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="heartDiseases" checkedColor="#d74ec2" prefHeight="39.0" prefWidth="145.0" text="Heart diseases" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Endocarditis, Coronary Artery Disease, Heart Valve Disease, Heart Arrhythmias ..." />
+               </tooltip>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="diabetes" checkedColor="#d74ec2" prefHeight="41.0" prefWidth="98.0" text="Diabetes" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="bloodPressure" checkedColor="#d74ec2" prefHeight="42.0" prefWidth="148.0" text="Blood pressure" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </HBox>
+      <HBox layoutX="31.0" layoutY="184.0" prefHeight="39.0" prefWidth="475.0" spacing="20.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="98.0" text="Habits:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="smoking" checkedColor="#d74ec2" prefHeight="39.0" prefWidth="139.0" text="Smoking" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="drinkingAlcohol" checkedColor="#d74ec2" prefHeight="41.0" prefWidth="170.0" text="Drinking alcohol" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </HBox>
+      <JFXComboBox fx:id="bloodType" focusColor="#23b9cd" layoutX="148.0" layoutY="85.0" prefHeight="31.0" prefWidth="170.0" style="-fx-font-size: 14;" unFocusColor="WHITE" visibleRowCount="4" />
+      <Label layoutX="31.0" layoutY="85.0" prefHeight="39.0" prefWidth="104.0" text="Blood type:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

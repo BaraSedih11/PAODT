@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.HistoryPaneHandler">
+    <children>
+        <MFXLegacyComboBox fx:id="using" editable="true" layoutX="250.0" layoutY="61.0" lineColor="WHITE" lineStrokeWidth="1.0" prefHeight="30.0" prefWidth="209.0" style="-fx-font-size: 15;" unfocusedLineColor="WHITE" visibleRowCount="3" />
+        <Label layoutX="119.0" layoutY="67.0" prefHeight="30.0" prefWidth="122.0" text="Search using" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtSearch" focusColor="#d74ec2" layoutX="491.0" layoutY="61.0" prefHeight="30.0" prefWidth="268.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+        <Label alignment="CENTER" layoutX="436.0" layoutY="8.0" prefHeight="54.0" prefWidth="209.0" style="-fx-font-family: algerian;" stylesheets="@../../../label..css" text="History" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+        <TableView fx:id="histories_table" editable="true" layoutX="6.0" layoutY="114.0" prefHeight="507.0" prefWidth="1070.0" stylesheets="@../../../tableview3.css">
+            <columns>
+                <TableColumn fx:id="clmNumber" minWidth="30.0" prefWidth="152.0" text="Operation number" />
+                <TableColumn fx:id="clmType" prefWidth="169.0" text="Opertation type" />
+                <TableColumn fx:id="clmEmp" minWidth="0.0" prefWidth="157.0" text="Employee" />
+                <TableColumn fx:id="clmRec" minWidth="0.0" prefWidth="166.0" text="Recipient" />
+                <TableColumn fx:id="clmDon" minWidth="0.0" prefWidth="129.0" text="Donor" />
+            <TableColumn fx:id="clmDate" prefWidth="149.0" text="Date" />
+            <TableColumn fx:id="clmTime" prefWidth="147.0" text="Time" />
+            </columns>
+        </TableView>
+        <MFXButton fx:id="search" buttonType="RAISED" layoutX="780.0" layoutY="67.0" onAction="#commitSearch" prefHeight="30.0" prefWidth="87.0" rippleColor="#d74ec2" style="-fx-background-color: #d74ec2;" text="search" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </MFXButton>
+        <MFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="888.0" layoutY="67.0" onAction="#deleteHistory" prefHeight="30.0" prefWidth="87.0" rippleColor="#d74ec2" style="-fx-background-color: #d74ec2;" text="delete" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </MFXButton>
+    </children>
+    <padding>
+        <Insets left="20.0" />
+    </padding>
+</AnchorPane>

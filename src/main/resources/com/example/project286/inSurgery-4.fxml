@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1018.0" style="-fx-background-color: rgb(0,0,0,.4);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InSurgery4Handler">
+   <children>
+      <Label alignment="CENTER" layoutX="299.0" layoutY="29.0" prefHeight="17.0" prefWidth="441.0" text="Choose from available donors" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="donors" focusColor="#405aa800" layoutX="332.0" layoutY="91.0" onAction="#changed" prefHeight="25.0" prefWidth="375.0" promptText="   Donor's Id" style="-fx-prompt-text-fill: white; -fx-font-size: 16; -fx-background-color: rgb(21, 126,138, 0.8);" unFocusColor="#ffffff00" visibleRowCount="4" />
+   </children>
+</AnchorPane>

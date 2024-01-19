@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneA3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="900.0" style="-fx-background-color: #147e8a; -fx-border-color: white; -fx-background-radius: 45; -fx-border-radius: 40; -fx-border-width: 2 2 2 2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InRecipientA3Handler">
+   <children>
+      <HBox layoutX="52.0" layoutY="52.0" prefHeight="115.0" prefWidth="796.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnRetina" mnemonicParsing="false" onAction="#pressed" prefHeight="113.0" prefWidth="132.0" stylesheets="@../../../donor-recipientButtons.css" textFill="#974928">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../retina.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLungs" mnemonicParsing="false" onAction="#pressed" prefHeight="113.0" prefWidth="132.0" stylesheets="@../../../donor-recipientButtons.css">
+               <graphic>
+                  <ImageView fitHeight="117.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../lungs.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnHeart" mnemonicParsing="false" onAction="#pressed" prefHeight="113.0" prefWidth="132.0" stylesheets="@../../../donor-recipientButtons.css" textFill="#144e8d">
+               <graphic>
+                  <ImageView fitHeight="126.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../heart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLiver" mnemonicParsing="false" onAction="#pressed" prefHeight="113.0" prefWidth="132.0" stylesheets="@../../../donor-recipientButtons.css">
+               <graphic>
+                  <ImageView fitHeight="90.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../liver.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnKidney" mnemonicParsing="false" onAction="#pressed" prefHeight="113.0" prefWidth="132.0" stylesheets="@../../../donor-recipientButtons.css" textFill="#2d9ba8">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../kidney.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="54.0" layoutY="195.0" prefHeight="36.0" prefWidth="784.0" spacing="30.0" style="-fx-background-color: #2d9ba8; -fx-border-color: white; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <Label fx:id="labRetina" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Retina" textFill="#147e8a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labLungs" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Lungs" textFill="#147e8a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labHeart" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Heart" textFill="#147e8a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labLiver" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="  Liver" textFill="#147e8a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="labKidney" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Kidney" textFill="#147e8a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="46.0" layoutY="20.0" prefHeight="30.0" prefWidth="202.0" text="The chosen organs:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

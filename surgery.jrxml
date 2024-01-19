@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="surgery" pageWidth="800" pageHeight="842" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a985fbf4-6386-465c-818f-add05d5b5c9f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BaraReport"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT "DONOR_ID",
+	"RECIPIENT_ID",
+	"DOCTOR_NAME",
+	"HOSPITAL_NAME",
+	"RESULT",
+	"ORGAN",
+	"SURGERY_DATE",
+	"SURGERY_NUMBER"
+FROM "SURGERY"]]>
+	</queryString>
+	<field name="DONOR_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="DONOR_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="DONOR_ID"/>
+	</field>
+	<field name="RECIPIENT_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="RECIPIENT_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="RECIPIENT_ID"/>
+	</field>
+	<field name="DOCTOR_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DOCTOR_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DOCTOR_NAME"/>
+	</field>
+	<field name="HOSPITAL_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HOSPITAL_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="HOSPITAL_NAME"/>
+	</field>
+	<field name="RESULT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RESULT"/>
+		<property name="com.jaspersoft.studio.field.label" value="RESULT"/>
+	</field>
+	<field name="ORGAN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ORGAN"/>
+		<property name="com.jaspersoft.studio.field.label" value="ORGAN"/>
+	</field>
+	<field name="SURGERY_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="SURGERY_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="SURGERY_DATE"/>
+	</field>
+	<field name="SURGERY_NUMBER" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SURGERY_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.label" value="SURGERY_NUMBER"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{SURGERY_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<line>
+					<reportElement x="-15" y="0" width="789" height="1" forecolor="#666666" uuid="a0c5ea0b-696e-4cd5-ae94-9d186c510e89"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band height="183"/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="800" height="92" backcolor="#006699" uuid="a4e3db39-a613-4d90-90bd-7ef1626c03ba"/>
+				<staticText>
+					<reportElement x="20" y="20" width="250" height="59" forecolor="#FFFFFF" uuid="ab4eb895-d01e-4b40-bc27-3c87105e743c"/>
+					<textElement>
+						<font size="38" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Surgery]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="314" height="36" forecolor="#FFFFFF" uuid="3bdaa7ec-c49f-4678-a903-26bf31bf3851"/>
+					<textElement textAlignment="Right">
+						<font size="19" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Information about surgery]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<textField>
+				<reportElement mode="Opaque" x="190" y="0" width="584" height="21" forecolor="#006699" backcolor="#E6E6E6" uuid="1811853b-ca85-45e8-b80c-14715a84685b"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SURGERY_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="-15" y="0" width="205" height="21" forecolor="#006699" backcolor="#E6E6E6" uuid="66b4d865-a597-403a-85e0-68525df800cf"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[SURGERY_NUMBER]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23">
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="2" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="bd87068a-4c09-4f9b-9464-0b0cc4b2c211">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3eb8ea1-f495-44e4-9d9f-f17ab086b823"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DONOR_ID]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="189" y="2" width="584" height="20" uuid="9aab028c-558e-4f4d-8de9-d2f606d90880">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3eb8ea1-f495-44e4-9d9f-f17ab086b823"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DONOR_ID}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="-10" y="22" width="780" height="1" uuid="594fa935-4fab-48be-b49c-862f435432f4"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="643">
+			<textField>
+				<reportElement mode="Opaque" x="115" y="410" width="659" height="13" backcolor="#E6E6E6" uuid="95aa045c-7ab6-41c6-84af-9cd5a9325dbb"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="-5" y="440" width="335" height="13" uuid="b38c154c-6ff7-4f0a-9450-f397bec19533"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="-5" y="410" width="285" height="13" backcolor="#E6E6E6" uuid="a416a7a5-0ca8-4b1c-9c4a-c71ab4e0c732"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-12" y="54" width="783" height="1" forecolor="#666666" uuid="c1155f54-0330-4747-ade3-e65597ee7ed3"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="34" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f6372a84-fd12-4d5b-a2e1-43bc5cd2a6ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b10346ce-e7e7-445e-a433-8d37e7f5af1a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECIPIENT_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="90" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="2683a42e-af2a-4308-ba99-c8deb1ff5e16">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a6419e7-c58b-40fb-ba9e-0a91b68a886b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOCTOR_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="150" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="95c19a7b-0ae8-4619-94b9-c6f6918a982d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66e7d95e-7d57-4622-8e21-56fed4029822"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HOSPITAL_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="270" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0490eaba-103b-4720-af63-07da3ad55428">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9b07a50-104f-49de-8ca7-211d731da0b2"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RESULT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="330" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9e199edf-7233-49ce-b31d-2dfdcadcea3c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2df9f62-95b8-4095-a473-147daf5729a0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ORGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="210" width="199" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a1e17f8f-d3a1-4536-9dbf-0acb29126e8b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e85b5fc-949c-4215-82e7-bb605a9e3fce"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SURGERY_DATE]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="189" y="35" width="584" height="20" uuid="b49f31e6-d89d-437c-9f4c-c5a95060daa9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b10346ce-e7e7-445e-a433-8d37e7f5af1a"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RECIPIENT_ID}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="190" y="90" width="580" height="20" uuid="49289441-7514-4058-aadf-2fb5a04c159e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a6419e7-c58b-40fb-ba9e-0a91b68a886b"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOCTOR_NAME}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="190" y="150" width="580" height="20" uuid="5c8e65df-15c1-4b2c-b2d6-507f1518611a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66e7d95e-7d57-4622-8e21-56fed4029822"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HOSPITAL_NAME}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="190" y="270" width="580" height="20" uuid="f2153a63-dd7a-4d73-bc0e-dffa034069aa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9b07a50-104f-49de-8ca7-211d731da0b2"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RESULT}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="190" y="330" width="579" height="20" uuid="fd1ddb3f-43b9-4e27-829d-d1ba34a7ac3d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2df9f62-95b8-4095-a473-147daf5729a0"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ORGAN}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="190" y="210" width="580" height="20" uuid="0335d14e-be56-4557-b3b1-7a6c69901630">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e85b5fc-949c-4215-82e7-bb605a9e3fce"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SURGERY_DATE}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-11" y="110" width="783" height="1" forecolor="#666666" uuid="d7fa1397-4d6a-4eb5-b09e-1a9a60c8568d"/>
+			</line>
+			<line>
+				<reportElement x="-12" y="170" width="783" height="1" forecolor="#666666" uuid="b12ba738-e8d8-4d4b-88eb-656192b24591"/>
+			</line>
+			<line>
+				<reportElement x="-12" y="230" width="783" height="1" forecolor="#666666" uuid="86002768-5508-4543-ae9a-3d193238903d"/>
+			</line>
+			<line>
+				<reportElement x="-11" y="290" width="783" height="1" forecolor="#666666" uuid="fdac8b47-bb38-4518-a746-95501efe345a"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

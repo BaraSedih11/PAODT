@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.SurgeryMainPaneHandler">
+    <children>
+      <AnchorPane fx:id="inSurgeryPane" layoutX="1.0" prefHeight="627.0" prefWidth="1081.0" />
+      <MFXButton fx:id="newSurgery" layoutX="945.0" layoutY="91.0" onAction="#newPressed" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: linear-gradient(#4ca4bf 0%, #135366 100%);" text="New Surgery" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXButton>
+      <HBox layoutX="429.0" layoutY="585.0" prefHeight="38.0" prefWidth="224.0" spacing="30.0">
+         <children>
+            <MFXButton fx:id="cancel" onAction="#cancelPressed" prefHeight="30.0" prefWidth="96.0" rippleColor="#e41e1a" style="-fx-background-color: rgb(0,0,0,.4);" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton fx:id="save" onAction="#savePresssed" prefHeight="30.0" prefWidth="96.0" rippleColor="#31c633" style="-fx-background-color: rgb(0,0,0,.4);" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </HBox>
+    </children>
+    <padding>
+        <Insets left="20.0" />
+    </padding>
+</AnchorPane>

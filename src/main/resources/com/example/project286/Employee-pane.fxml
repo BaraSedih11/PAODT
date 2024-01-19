@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.EmployeePaneHandler">
+    <children>
+      <AnchorPane fx:id="inEmployeePane" layoutX="6.0" prefHeight="627.0" prefWidth="1081.0" />
+      <HBox layoutX="481.0" layoutY="585.0" prefHeight="38.0" prefWidth="210.0" spacing="30.0">
+         <children>
+            <JFXButton fx:id="cancel" onAction="#currentEmp2" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="save" onAction="#currentEmp" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton fx:id="up" layoutX="450.0" layoutY="123.0" onAction="#upPressed" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #d74ec2;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="add" layoutX="650.0" layoutY="123.0" onAction="#addEmp" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #d74ec2;" text="Add employee" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="saveChanges" layoutX="337.0" layoutY="583.0" onAction="#updateEmp2" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: green;" text="Save changes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

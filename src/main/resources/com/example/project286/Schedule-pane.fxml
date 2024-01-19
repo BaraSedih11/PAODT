@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<MFXScrollPane fx:id="schedule" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.SchedulePaneHandler">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1300.0" prefWidth="1067.0" style="-fx-background-color: #147e8a;">
+         <children>
+            <AnchorPane fx:id="inSchedule" prefHeight="1300.0" prefWidth="1067.0" style="-fx-background-color: transparent;" />
+            <MFXButton fx:id="permit" layoutX="503.0" layoutY="1137.0" onAction="#permitPressed" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: green;" text="Permit" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton fx:id="save" layoutX="503.0" layoutY="1256.0" onAction="#savePressed" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+   </content>
+</MFXScrollPane>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneA" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1081.0" style="-fx-background-color: #147e8a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project286.InEmployeeAHandler">
+   <children>
+      <VBox layoutX="40.0" layoutY="27.0" prefHeight="525.0" prefWidth="983.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="1067.0" spacing="50.0">
+               <children>
+                  <JFXTextField fx:id="fName" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="176.0" promptText="First name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="sName" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="176.0" promptText="Second name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tName" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="176.0" promptText="Third name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="lName" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="176.0" promptText="Last name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1042.0" spacing="30.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <JFXTextField fx:id="id" focusColor="#23b9cd" labelFloat="true" prefHeight="32.0" prefWidth="179.0" promptText="Id" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="151.0" text="Gender:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="male" prefHeight="51.0" prefWidth="84.0" text="Male" textFill="WHITE">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="G" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="female" prefHeight="42.0" prefWidth="101.0" text="Female" textFill="WHITE" toggleGroup="$G">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1053.0" spacing="40.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="90.0" text="Birthdate:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="birthdate" prefHeight="41.0" prefWidth="249.0" promptText="Choose birthdate" />
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="38.0" prefWidth="125.0" text="Start Date:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="startdate" prefHeight="41.0" prefWidth="249.0" promptText="Choose StartDate" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1042.0" spacing="40.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="41.0" prefWidth="66.0" text="Adress:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="city" focusColor="#23b9cd" labelFloat="true" prefHeight="31.0" prefWidth="158.0" promptText="City" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="street" focusColor="#23b9cd" labelFloat="true" prefHeight="20.0" prefWidth="158.0" promptText="Street" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1053.0" spacing="20.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label prefHeight="38.0" prefWidth="133.0" text="Working Time:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="morning" prefHeight="51.0" prefWidth="84.0" text="morning" textFill="WHITE">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="wt" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="evening" prefHeight="42.0" prefWidth="101.0" text="evening" textFill="WHITE" toggleGroup="$wt">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <Label alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="123.0" text="Rank: " textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="superviser" prefHeight="43.0" prefWidth="127.0" text="superviser" textFill="WHITE">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="rank" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="supervisee" prefHeight="42.0" prefWidth="101.0" text="supervisee" textFill="WHITE" toggleGroup="$rank">
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                     <selectedColor>
+                        <Color red="0.843137264251709" green="0.30588236451148987" blue="0.7607843279838562" />
+                     </selectedColor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1042.0" spacing="50.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="189.0" text="Contact Information:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="email" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="270.0" promptText="Email" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="phone" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="270.0" promptText="Phone number" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="1053.0" spacing="30.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="208.0" text="Salary:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="salary" focusColor="#23b9cd" labelFloat="true" prefHeight="30.0" prefWidth="229.0" promptText="Enter Salary" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label alignment="BOTTOM_RIGHT" layoutX="30.0" layoutY="10.0" prefHeight="38.0" prefWidth="167.0" text="Blood Type:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="bloodtype" focusColor="#147e8a" prefHeight="30.0" prefWidth="133.0" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="1044.0" spacing="30.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="44.0" prefWidth="97.0" text="Username:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="username" focusColor="#23b9cd" labelFloat="true" prefHeight="32.0" prefWidth="213.0" promptText="Enter username" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label alignment="BOTTOM_RIGHT" layoutX="30.0" layoutY="10.0" prefHeight="38.0" prefWidth="157.0" text="Password:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="password" focusColor="#23b9cd" labelFloat="true" layoutX="172.0" layoutY="10.0" prefHeight="32.0" prefWidth="213.0" promptText="Enter password" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

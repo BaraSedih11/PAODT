@@ -1,0 +1,15 @@
+.button {
+-fx-shape: "M39 20a19 19 0 1 1-38 0 19 19 0 1 1 38 0z";
+-fx-border-color: white;
+}
+
+.toggle-button {
+    -fx-shape: "M39 20a19 19 0 1 1-38 0 19 19 0 1 1 38 0z";
+    -fx-border-color: #2799a4;
+    -fx-background-color: #2799a4;
+    -fx-border-width: 0 0 0 0;
+
+}
+.toggle-button:selected {
+    -fx-background-color: white;
+}
